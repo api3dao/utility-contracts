@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "hardhat compile",
-    "deploy:mainnet": "hardhat deploy --network mainnet",
     "deploy:ropsten": "hardhat deploy --network ropsten",
     "deploy:rinkeby": "hardhat deploy --network rinkeby",
     "deploy:goerli": "hardhat deploy --network goerli",
