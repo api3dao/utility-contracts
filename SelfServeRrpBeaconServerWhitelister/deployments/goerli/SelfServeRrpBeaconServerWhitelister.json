@@ -1,0 +1,408 @@
+{
+  "address": "0x04De82532FeE662877fdf7357Ef92D95B6bc1DfE",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "rrpBeaconServerAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "expirationTimestamp",
+          "type": "uint64"
+        }
+      ],
+      "name": "SetBeaconIdToExpirationTimestamp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "indefiniteWhitelistStatus",
+          "type": "bool"
+        }
+      ],
+      "name": "SetBeaconIdToIndefiniteWhitelistStatus",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reader",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "expirationTimestamp",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "indefiniteWhitelistStatus",
+          "type": "bool"
+        }
+      ],
+      "name": "WhitelistedReader",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "beaconIdToExpirationTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "beaconIdToIndefiniteWhitelistStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rrpBeaconServer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint64",
+          "name": "expirationTimestamp",
+          "type": "uint64"
+        }
+      ],
+      "name": "setBeaconIdToExpirationTimestamp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "indefiniteWhitelistStatus",
+          "type": "bool"
+        }
+      ],
+      "name": "setBeaconIdToIndefiniteWhitelistStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "beaconId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "reader",
+          "type": "address"
+        }
+      ],
+      "name": "whitelistReader",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x234b98b48d78ffe7ababe65e6c3ac1565c8004169b3865b7993cce5fb17d7cf0",
+  "receipt": {
+    "to": null,
+    "from": "0x5b1243308f56156553F067D354b162f71E581b28",
+    "contractAddress": "0x04De82532FeE662877fdf7357Ef92D95B6bc1DfE",
+    "transactionIndex": 0,
+    "gasUsed": "482399",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000020000000080000000000040000000000400000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x7790ef2f7abbd9ecd8dbb481a764b9a880515667982d35d45b104e3208037c51",
+    "transactionHash": "0x234b98b48d78ffe7ababe65e6c3ac1565c8004169b3865b7993cce5fb17d7cf0",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 6276411,
+        "transactionHash": "0x234b98b48d78ffe7ababe65e6c3ac1565c8004169b3865b7993cce5fb17d7cf0",
+        "address": "0x04De82532FeE662877fdf7357Ef92D95B6bc1DfE",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000005b1243308f56156553f067d354b162f71e581b28"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x7790ef2f7abbd9ecd8dbb481a764b9a880515667982d35d45b104e3208037c51"
+      }
+    ],
+    "blockNumber": 6276411,
+    "cumulativeGasUsed": "482399",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x2cFda716b751eb406C5124C6E4428F2AEA453D96"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "9206a9d31ccb6ccc4502c8b3f50e3144",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"rrpBeaconServerAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint64\",\"name\":\"expirationTimestamp\",\"type\":\"uint64\"}],\"name\":\"SetBeaconIdToExpirationTimestamp\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"indefiniteWhitelistStatus\",\"type\":\"bool\"}],\"name\":\"SetBeaconIdToIndefiniteWhitelistStatus\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"reader\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint64\",\"name\":\"expirationTimestamp\",\"type\":\"uint64\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"indefiniteWhitelistStatus\",\"type\":\"bool\"}],\"name\":\"WhitelistedReader\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"beaconIdToExpirationTimestamp\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"beaconIdToIndefiniteWhitelistStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rrpBeaconServer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"internalType\":\"uint64\",\"name\":\"expirationTimestamp\",\"type\":\"uint64\"}],\"name\":\"setBeaconIdToExpirationTimestamp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"internalType\":\"bool\",\"name\":\"indefiniteWhitelistStatus\",\"type\":\"bool\"}],\"name\":\"setBeaconIdToIndefiniteWhitelistStatus\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"beaconId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"reader\",\"type\":\"address\"}],\"name\":\"whitelistReader\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"The SelfServeRrpBeaconServerWhitelister contract has the WhitelistExpirationSetterRole and the IndefiniteWhitelisterRole of the RrpBeaconServer contract. The deployer of this contract can specify the beaconIds for which readers can whitelist themselves. The deployer (also the owner) can also add new beaconIds later for readers to self whitelist themselves.\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"rrpBeaconServerAddress\":\"The RrpBeaconServer contract to whitelist readers\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"setBeaconIdToExpirationTimestamp(bytes32,uint64)\":{\"params\":{\"beaconId\":\"The beaconId to set an expiration timestamp for\",\"expirationTimestamp\":\"The expiration timestamp for the beaconId\"}},\"setBeaconIdToIndefiniteWhitelistStatus(bytes32,bool)\":{\"params\":{\"beaconId\":\"The beaconId to set an indefinite whitelist status for\",\"indefiniteWhitelistStatus\":\"The indefinite whitelist status for the beaconId\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"whitelistReader(bytes32,address)\":{\"params\":{\"beaconId\":\"The beaconId to whitelist\",\"reader\":\"The reader to whitelist on the beaconId\"}}},\"title\":\"Contract that allows to whitlist readers on the RrpBeaconServer\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"setBeaconIdToExpirationTimestamp(bytes32,uint64)\":{\"notice\":\"Adds a new beaconId with an expiration timestamp that can be whitelisted by readers\"},\"setBeaconIdToIndefiniteWhitelistStatus(bytes32,bool)\":{\"notice\":\"Adds a new beaconId with an indefinite whitelist status that can be whitelisted by readers indefinetly\"},\"whitelistReader(bytes32,address)\":{\"notice\":\"Whitelists a reader on the RrpBeaconServer with an expiration timestamp\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SelfServeRrpBeaconServerWhitelister.sol\":\"SelfServeRrpBeaconServerWhitelister\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@api3/airnode-protocol/contracts/rrp/requesters/interfaces/IRrpBeaconServer.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.9;\\n\\ninterface IRrpBeaconServer {\\n    event ExtendedWhitelistExpiration(\\n        bytes32 indexed beaconId,\\n        address indexed reader,\\n        address indexed sender,\\n        uint256 expiration\\n    );\\n\\n    event SetWhitelistExpiration(\\n        bytes32 indexed beaconId,\\n        address indexed reader,\\n        address indexed sender,\\n        uint256 expiration\\n    );\\n\\n    event SetIndefiniteWhitelistStatus(\\n        bytes32 indexed beaconId,\\n        address indexed reader,\\n        address indexed sender,\\n        bool status,\\n        uint192 indefiniteWhitelistCount\\n    );\\n\\n    event RevokedIndefiniteWhitelistStatus(\\n        bytes32 indexed beaconId,\\n        address indexed reader,\\n        address indexed setter,\\n        address sender,\\n        uint192 indefiniteWhitelistCount\\n    );\\n\\n    event SetUpdatePermissionStatus(\\n        address indexed sponsor,\\n        address indexed updateRequester,\\n        bool status\\n    );\\n\\n    event RequestedBeaconUpdate(\\n        bytes32 indexed beaconId,\\n        address indexed sponsor,\\n        address indexed requester,\\n        bytes32 requestId,\\n        bytes32 templateId,\\n        address sponsorWallet,\\n        bytes parameters\\n    );\\n\\n    event UpdatedBeacon(\\n        bytes32 indexed beaconId,\\n        bytes32 requestId,\\n        int224 value,\\n        uint32 timestamp\\n    );\\n\\n    function extendWhitelistExpiration(\\n        bytes32 beaconId,\\n        address reader,\\n        uint64 expirationTimestamp\\n    ) external;\\n\\n    function setWhitelistExpiration(\\n        bytes32 beaconId,\\n        address reader,\\n        uint64 expirationTimestamp\\n    ) external;\\n\\n    function setIndefiniteWhitelistStatus(\\n        bytes32 beaconId,\\n        address reader,\\n        bool status\\n    ) external;\\n\\n    function revokeIndefiniteWhitelistStatus(\\n        bytes32 beaconId,\\n        address reader,\\n        address setter\\n    ) external;\\n\\n    function setUpdatePermissionStatus(address updateRequester, bool status)\\n        external;\\n\\n    function requestBeaconUpdate(\\n        bytes32 beaconId,\\n        address requester,\\n        address designatedWallet,\\n        bytes calldata parameters\\n    ) external;\\n\\n    function fulfill(bytes32 requestId, bytes calldata data) external;\\n\\n    function readBeacon(bytes32 beaconId)\\n        external\\n        view\\n        returns (int224 value, uint32 timestamp);\\n\\n    function readerCanReadBeacon(bytes32 beaconId, address reader)\\n        external\\n        view\\n        returns (bool);\\n\\n    function beaconIdToReaderToWhitelistStatus(bytes32 beaconId, address reader)\\n        external\\n        view\\n        returns (uint64 expirationTimestamp, uint192 indefiniteWhitelistCount);\\n\\n    function beaconIdToReaderToSetterToIndefiniteWhitelistStatus(\\n        bytes32 beaconId,\\n        address reader,\\n        address setter\\n    ) external view returns (bool indefiniteWhitelistStatus);\\n\\n    function sponsorToUpdateRequesterToPermissionStatus(\\n        address sponsor,\\n        address updateRequester\\n    ) external view returns (bool permissionStatus);\\n\\n    function deriveBeaconId(bytes32 templateId, bytes calldata parameters)\\n        external\\n        pure\\n        returns (bytes32 beaconId);\\n}\\n\",\"keccak256\":\"0xf58176a8be6c9b47f9ed4d88ef43611ea1cdda6e1c0754a6d6b165570edea559\",\"license\":\"MIT\"},\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\"},\"contracts/SelfServeRrpBeaconServerWhitelister.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.9;\\n\\nimport \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\nimport \\\"@api3/airnode-protocol/contracts/rrp/requesters/interfaces/IRrpBeaconServer.sol\\\";\\nimport \\\"./interfaces/ISelfServeRrpBeaconServerWhitelister.sol\\\";\\n\\n/// @title Contract that allows to whitlist readers on the RrpBeaconServer\\n/// @dev The SelfServeRrpBeaconServerWhitelister contract has the WhitelistExpirationSetterRole\\n/// and the IndefiniteWhitelisterRole of the RrpBeaconServer contract. The deployer of this contract\\n/// can specify the beaconIds for which readers can whitelist themselves. The deployer (also the owner)\\n/// can also add new beaconIds later for readers to self whitelist themselves.\\ncontract SelfServeRrpBeaconServerWhitelister is\\n    Ownable,\\n    ISelfServeRrpBeaconServerWhitelister\\n{\\n    address public rrpBeaconServer;\\n\\n    mapping(bytes32 => uint64) public beaconIdToExpirationTimestamp;\\n    mapping(bytes32 => bool) public beaconIdToIndefiniteWhitelistStatus;\\n\\n    /// @param rrpBeaconServerAddress The RrpBeaconServer contract to whitelist readers\\n    constructor(address rrpBeaconServerAddress) {\\n        require(\\n            rrpBeaconServerAddress != address(0),\\n            \\\"RrpBeaconServer address zero\\\"\\n        );\\n        rrpBeaconServer = rrpBeaconServerAddress;\\n    }\\n\\n    /// @notice Adds a new beaconId with an expiration timestamp\\n    /// that can be whitelisted by readers\\n    /// @param beaconId The beaconId to set an expiration timestamp for\\n    /// @param expirationTimestamp The expiration timestamp for the beaconId\\n    function setBeaconIdToExpirationTimestamp(\\n        bytes32 beaconId,\\n        uint64 expirationTimestamp\\n    ) external override onlyOwner {\\n        beaconIdToExpirationTimestamp[beaconId] = expirationTimestamp;\\n        emit SetBeaconIdToExpirationTimestamp(beaconId, expirationTimestamp);\\n    }\\n\\n    /// @notice Adds a new beaconId with an indefinite whitelist status\\n    /// that can be whitelisted by readers indefinetly\\n    /// @param beaconId The beaconId to set an indefinite whitelist status for\\n    /// @param indefiniteWhitelistStatus The indefinite whitelist status for the beaconId\\n    function setBeaconIdToIndefiniteWhitelistStatus(\\n        bytes32 beaconId,\\n        bool indefiniteWhitelistStatus\\n    ) external override onlyOwner {\\n        beaconIdToIndefiniteWhitelistStatus[\\n            beaconId\\n        ] = indefiniteWhitelistStatus;\\n        emit SetBeaconIdToIndefiniteWhitelistStatus(\\n            beaconId,\\n            indefiniteWhitelistStatus\\n        );\\n    }\\n\\n    /// @notice Whitelists a reader on the RrpBeaconServer with an expiration timestamp\\n    /// @param beaconId The beaconId to whitelist\\n    /// @param reader The reader to whitelist on the beaconId\\n    function whitelistReader(bytes32 beaconId, address reader)\\n        external\\n        override\\n    {\\n        uint64 expirationTimestamp = beaconIdToExpirationTimestamp[beaconId];\\n        bool indefiniteWhitelistStatus = beaconIdToIndefiniteWhitelistStatus[\\n            beaconId\\n        ];\\n        require(\\n            expirationTimestamp > block.timestamp || indefiniteWhitelistStatus,\\n            \\\"Cannot whitelist\\\"\\n        );\\n        IRrpBeaconServer(rrpBeaconServer).setWhitelistExpiration(\\n            beaconId,\\n            reader,\\n            expirationTimestamp\\n        );\\n        IRrpBeaconServer(rrpBeaconServer).setIndefiniteWhitelistStatus(\\n            beaconId,\\n            reader,\\n            indefiniteWhitelistStatus\\n        );\\n        emit WhitelistedReader(\\n            beaconId,\\n            reader,\\n            expirationTimestamp,\\n            indefiniteWhitelistStatus\\n        );\\n    }\\n}\\n\",\"keccak256\":\"0xdbcf84d1dbdaf997d6c730e4f6352bf98faab589134d7d40fb7af406f4a44eb6\",\"license\":\"MIT\"},\"contracts/interfaces/ISelfServeRrpBeaconServerWhitelister.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.9;\\n\\ninterface ISelfServeRrpBeaconServerWhitelister {\\n    event SetBeaconIdToExpirationTimestamp(\\n        bytes32 indexed beaconId,\\n        uint64 expirationTimestamp\\n    );\\n    event SetBeaconIdToIndefiniteWhitelistStatus(\\n        bytes32 indexed beaconId,\\n        bool indefiniteWhitelistStatus\\n    );\\n    event WhitelistedReader(\\n        bytes32 indexed beaconId,\\n        address indexed reader,\\n        uint64 expirationTimestamp,\\n        bool indefiniteWhitelistStatus\\n    );\\n\\n    function setBeaconIdToExpirationTimestamp(\\n        bytes32 _beaconId,\\n        uint64 _expirationTimestamp\\n    ) external;\\n\\n    function setBeaconIdToIndefiniteWhitelistStatus(\\n        bytes32 _beaconId,\\n        bool _indefiniteWhitelistStatus\\n    ) external;\\n\\n    function whitelistReader(bytes32 _beaconId, address _reader) external;\\n\\n    function beaconIdToExpirationTimestamp(bytes32 _beaconId)\\n        external\\n        view\\n        returns (uint64);\\n\\n    function beaconIdToIndefiniteWhitelistStatus(bytes32 _beaconId)\\n        external\\n        view\\n        returns (bool);\\n}\\n\",\"keccak256\":\"0x8c99a85934ba6fb07834b622db06c6b85d1f691860789ad73efa65879258f2dc\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161081d38038061081d83398101604081905261002f91610107565b610038336100b7565b6001600160a01b0381166100925760405162461bcd60e51b815260206004820152601c60248201527f527270426561636f6e5365727665722061646472657373207a65726f00000000604482015260640160405180910390fd5b600180546001600160a01b0319166001600160a01b0392909216919091179055610137565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561011957600080fd5b81516001600160a01b038116811461013057600080fd5b9392505050565b6106d7806101466000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b146101305780639da4543b14610155578063ad2245a914610168578063f2fde38b1461017b578063f4ac6c371461018e57600080fd5b806318c79ad1146100985780634f65fd8e146100e05780635c6f7656146100f5578063715018a614610128575b600080fd5b6100c26100a6366004610582565b60026020526000908152604090205467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b6100f36100ee3660046105b7565b6101a1565b005b610118610103366004610582565b60036020526000908152604090205460ff1681565b60405190151581526020016100d7565b6100f3610356565b6000546001600160a01b03165b6040516001600160a01b0390911681526020016100d7565b60015461013d906001600160a01b031681565b6100f36101763660046105e3565b61038c565b6100f3610189366004610618565b61040e565b6100f361019c36600461063a565b6104a9565b60008281526002602090815260408083205460039092529091205467ffffffffffffffff9091169060ff16428211806101d75750805b61021b5760405162461bcd60e51b815260206004820152601060248201526f10d85b9b9bdd081dda1a5d195b1a5cdd60821b60448201526064015b60405180910390fd5b60015460405163074db3d760e21b8152600481018690526001600160a01b03858116602483015267ffffffffffffffff8516604483015290911690631d36cf5c90606401600060405180830381600087803b15801561027957600080fd5b505af115801561028d573d6000803e3d6000fd5b50506001546040516319bb73e160e11b8152600481018890526001600160a01b03878116602483015285151560448301529091169250633376e7c29150606401600060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b50506040805167ffffffffffffffff8616815284151560208201526001600160a01b03871693508792507f2b028e8c011212661e5be2aa46f2ce5cf9e0d4fd519ed16bdbf0e26d46d19ba1910160405180910390a350505050565b6000546001600160a01b031633146103805760405162461bcd60e51b81526004016102129061066c565b61038a6000610532565b565b6000546001600160a01b031633146103b65760405162461bcd60e51b81526004016102129061066c565b600082815260036020908152604091829020805460ff1916841515908117909155915191825283917f4ba089eb0a1d5b414d8286000f8c81baf6bcf8f416259b3fd464cb8881c8a32091015b60405180910390a25050565b6000546001600160a01b031633146104385760405162461bcd60e51b81526004016102129061066c565b6001600160a01b03811661049d5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610212565b6104a681610532565b50565b6000546001600160a01b031633146104d35760405162461bcd60e51b81526004016102129061066c565b600082815260026020908152604091829020805467ffffffffffffffff191667ffffffffffffffff8516908117909155915191825283917f3bdd5f47da58c7af5ab9a1aa3398a7d23d7e16fddd14da7f0dc91a91428ac1d19101610402565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561059457600080fd5b5035919050565b80356001600160a01b03811681146105b257600080fd5b919050565b600080604083850312156105ca57600080fd5b823591506105da6020840161059b565b90509250929050565b600080604083850312156105f657600080fd5b823591506020830135801515811461060d57600080fd5b809150509250929050565b60006020828403121561062a57600080fd5b6106338261059b565b9392505050565b6000806040838503121561064d57600080fd5b82359150602083013567ffffffffffffffff8116811461060d57600080fd5b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea26469706673582212200b231c4744b65cc22c4533574af9ae94ed38eb24f68590c9214c44300977dd2564736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b146101305780639da4543b14610155578063ad2245a914610168578063f2fde38b1461017b578063f4ac6c371461018e57600080fd5b806318c79ad1146100985780634f65fd8e146100e05780635c6f7656146100f5578063715018a614610128575b600080fd5b6100c26100a6366004610582565b60026020526000908152604090205467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b6100f36100ee3660046105b7565b6101a1565b005b610118610103366004610582565b60036020526000908152604090205460ff1681565b60405190151581526020016100d7565b6100f3610356565b6000546001600160a01b03165b6040516001600160a01b0390911681526020016100d7565b60015461013d906001600160a01b031681565b6100f36101763660046105e3565b61038c565b6100f3610189366004610618565b61040e565b6100f361019c36600461063a565b6104a9565b60008281526002602090815260408083205460039092529091205467ffffffffffffffff9091169060ff16428211806101d75750805b61021b5760405162461bcd60e51b815260206004820152601060248201526f10d85b9b9bdd081dda1a5d195b1a5cdd60821b60448201526064015b60405180910390fd5b60015460405163074db3d760e21b8152600481018690526001600160a01b03858116602483015267ffffffffffffffff8516604483015290911690631d36cf5c90606401600060405180830381600087803b15801561027957600080fd5b505af115801561028d573d6000803e3d6000fd5b50506001546040516319bb73e160e11b8152600481018890526001600160a01b03878116602483015285151560448301529091169250633376e7c29150606401600060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b50506040805167ffffffffffffffff8616815284151560208201526001600160a01b03871693508792507f2b028e8c011212661e5be2aa46f2ce5cf9e0d4fd519ed16bdbf0e26d46d19ba1910160405180910390a350505050565b6000546001600160a01b031633146103805760405162461bcd60e51b81526004016102129061066c565b61038a6000610532565b565b6000546001600160a01b031633146103b65760405162461bcd60e51b81526004016102129061066c565b600082815260036020908152604091829020805460ff1916841515908117909155915191825283917f4ba089eb0a1d5b414d8286000f8c81baf6bcf8f416259b3fd464cb8881c8a32091015b60405180910390a25050565b6000546001600160a01b031633146104385760405162461bcd60e51b81526004016102129061066c565b6001600160a01b03811661049d5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610212565b6104a681610532565b50565b6000546001600160a01b031633146104d35760405162461bcd60e51b81526004016102129061066c565b600082815260026020908152604091829020805467ffffffffffffffff191667ffffffffffffffff8516908117909155915191825283917f3bdd5f47da58c7af5ab9a1aa3398a7d23d7e16fddd14da7f0dc91a91428ac1d19101610402565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b60006020828403121561059457600080fd5b5035919050565b80356001600160a01b03811681146105b257600080fd5b919050565b600080604083850312156105ca57600080fd5b823591506105da6020840161059b565b90509250929050565b600080604083850312156105f657600080fd5b823591506020830135801515811461060d57600080fd5b809150509250929050565b60006020828403121561062a57600080fd5b6106338261059b565b9392505050565b6000806040838503121561064d57600080fd5b82359150602083013567ffffffffffffffff8116811461060d57600080fd5b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea26469706673582212200b231c4744b65cc22c4533574af9ae94ed38eb24f68590c9214c44300977dd2564736f6c63430008090033",
+  "devdoc": {
+    "details": "The SelfServeRrpBeaconServerWhitelister contract has the WhitelistExpirationSetterRole and the IndefiniteWhitelisterRole of the RrpBeaconServer contract. The deployer of this contract can specify the beaconIds for which readers can whitelist themselves. The deployer (also the owner) can also add new beaconIds later for readers to self whitelist themselves.",
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "params": {
+          "rrpBeaconServerAddress": "The RrpBeaconServer contract to whitelist readers"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "setBeaconIdToExpirationTimestamp(bytes32,uint64)": {
+        "params": {
+          "beaconId": "The beaconId to set an expiration timestamp for",
+          "expirationTimestamp": "The expiration timestamp for the beaconId"
+        }
+      },
+      "setBeaconIdToIndefiniteWhitelistStatus(bytes32,bool)": {
+        "params": {
+          "beaconId": "The beaconId to set an indefinite whitelist status for",
+          "indefiniteWhitelistStatus": "The indefinite whitelist status for the beaconId"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "whitelistReader(bytes32,address)": {
+        "params": {
+          "beaconId": "The beaconId to whitelist",
+          "reader": "The reader to whitelist on the beaconId"
+        }
+      }
+    },
+    "title": "Contract that allows to whitlist readers on the RrpBeaconServer",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "setBeaconIdToExpirationTimestamp(bytes32,uint64)": {
+        "notice": "Adds a new beaconId with an expiration timestamp that can be whitelisted by readers"
+      },
+      "setBeaconIdToIndefiniteWhitelistStatus(bytes32,bool)": {
+        "notice": "Adds a new beaconId with an indefinite whitelist status that can be whitelisted by readers indefinetly"
+      },
+      "whitelistReader(bytes32,address)": {
+        "notice": "Whitelists a reader on the RrpBeaconServer with an expiration timestamp"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3525,
+        "contract": "contracts/SelfServeRrpBeaconServerWhitelister.sol:SelfServeRrpBeaconServerWhitelister",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 4294,
+        "contract": "contracts/SelfServeRrpBeaconServerWhitelister.sol:SelfServeRrpBeaconServerWhitelister",
+        "label": "rrpBeaconServer",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 4298,
+        "contract": "contracts/SelfServeRrpBeaconServerWhitelister.sol:SelfServeRrpBeaconServerWhitelister",
+        "label": "beaconIdToExpirationTimestamp",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_bytes32,t_uint64)"
+      },
+      {
+        "astId": 4302,
+        "contract": "contracts/SelfServeRrpBeaconServerWhitelister.sol:SelfServeRrpBeaconServerWhitelister",
+        "label": "beaconIdToIndefiniteWhitelistStatus",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_bytes32,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_bytes32,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_bytes32,t_uint64)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint64)",
+        "numberOfBytes": "32",
+        "value": "t_uint64"
+      },
+      "t_uint64": {
+        "encoding": "inplace",
+        "label": "uint64",
+        "numberOfBytes": "8"
+      }
+    }
+  }
+}
