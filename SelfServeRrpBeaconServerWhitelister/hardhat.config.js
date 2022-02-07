@@ -15,7 +15,8 @@ module.exports = {
         rinkeby: credentials.etherscanApiKey,
         goerli: credentials.etherscanApiKey,
         kovan: credentials.etherscanApiKey,
-        'polygon-mumbai': credentials.polygonscanApiKey,
+        // This needs to be camelCase otherwise hardhat-etherscan plugin throws
+        polygonMumbai: credentials.polygonscanApiKey,
     }
   },
   networks: {
