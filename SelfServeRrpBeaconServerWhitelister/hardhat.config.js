@@ -15,7 +15,7 @@ module.exports = {
         rinkeby: credentials.etherscanApiKey,
         goerli: credentials.etherscanApiKey,
         kovan: credentials.etherscanApiKey,
-        polygonMumbai: credentials.polygonscanApiKey,
+        'polygon-mumbai': credentials.polygonscanApiKey,
     }
   },
   networks: {
@@ -35,9 +35,9 @@ module.exports = {
       url: credentials.kovan.providerUrl || '',
       accounts: { mnemonic: credentials.kovan.mnemonic || '' },
     },
-    polygonMumbai: {
-      url: credentials.polygonMumbai.providerUrl || '',
-      accounts: { mnemonic: credentials.polygonMumbai.mnemonic || '' },
+    'polygon-mumbai': {
+      url: credentials['polygon-mumbai'].providerUrl || '',
+      accounts: { mnemonic: credentials['polygon-mumbai'].mnemonic || '' },
     },
   },
   solidity: {

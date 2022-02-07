@@ -7,7 +7,7 @@
     "deploy:rinkeby": "hardhat deploy --network rinkeby",
     "deploy:goerli": "hardhat deploy --network goerli",
     "deploy:kovan": "hardhat deploy --network kovan",
-    "deploy:polygonmumbai": "hardhat deploy --network polygonMumbai",
+    "deploy:polygon-mumbai": "hardhat deploy --network polygon-mumbai",
     "test": "hardhat test"
   },
   "devDependencies": {
