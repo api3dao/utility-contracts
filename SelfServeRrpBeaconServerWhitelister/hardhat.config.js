@@ -15,6 +15,7 @@ module.exports = {
         rinkeby: credentials.etherscanApiKey,
         goerli: credentials.etherscanApiKey,
         kovan: credentials.etherscanApiKey,
+        // This needs to be camelCase otherwise hardhat-etherscan plugin throws
         polygonMumbai: credentials.polygonscanApiKey,
     }
   },
@@ -35,9 +36,9 @@ module.exports = {
       url: credentials.kovan.providerUrl || '',
       accounts: { mnemonic: credentials.kovan.mnemonic || '' },
     },
-    polygonMumbai: {
-      url: credentials.polygonMumbai.providerUrl || '',
-      accounts: { mnemonic: credentials.polygonMumbai.mnemonic || '' },
+    'polygon-mumbai': {
+      url: credentials['polygon-mumbai'].providerUrl || '',
+      accounts: { mnemonic: credentials['polygon-mumbai'].mnemonic || '' },
     },
   },
   solidity: {
