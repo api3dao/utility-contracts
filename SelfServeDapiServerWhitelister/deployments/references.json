@@ -1,0 +1,8 @@
+{
+  "chainNames": {
+    "80001": "polygon-testnet"
+  },
+  "SelfServeDapiServerWhitelister": {
+    "80001": "0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3"
+  }
+}
