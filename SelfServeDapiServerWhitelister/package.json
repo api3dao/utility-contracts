@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "hardhat compile",
+    "deploy:avalanche-testnet": "hardhat deploy --network avalanche-testnet",
     "deploy:polygon-testnet": "hardhat deploy --network polygon-testnet"
   },
   "devDependencies": {

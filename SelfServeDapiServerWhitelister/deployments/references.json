@@ -1,8 +1,10 @@
 {
   "chainNames": {
+    "43113": "avalanche-testnet",
     "80001": "polygon-testnet"
   },
   "SelfServeDapiServerWhitelister": {
+    "43113": "0xc8f78DA6022572643c09DE0D02e0542C0653F88F",
     "80001": "0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3"
   }
 }
