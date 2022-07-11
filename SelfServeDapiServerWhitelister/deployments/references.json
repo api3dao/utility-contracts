@@ -1,10 +1,12 @@
 {
   "chainNames": {
     "43113": "avalanche-testnet",
-    "80001": "polygon-testnet"
+    "80001": "polygon-testnet",
+    "200101": "milkomeda-testnet"
   },
   "SelfServeDapiServerWhitelister": {
     "43113": "0xc8f78DA6022572643c09DE0D02e0542C0653F88F",
-    "80001": "0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3"
+    "80001": "0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3",
+    "200101": "0x8F3A2508C45a58d4fBAd5Ce564899659626D41B6"
   }
 }

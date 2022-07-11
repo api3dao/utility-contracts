@@ -9,12 +9,11 @@
   ],
   "scripts": {
     "build": "hardhat compile",
-    "deploy:avalanche-testnet": "hardhat deploy --network avalanche-testnet",
-    "deploy:polygon-testnet": "hardhat deploy --network polygon-testnet"
+    "deploy": "hardhat deploy --network $NETWORK"
   },
   "devDependencies": {
     "@api3/airnode-protocol-v1": "0.5.0",
-    "@api3/operations": "git+https://github.com/api3dao/operations.git#08167ffd23a6b65b11c1a916e20d5dcf36d0fc0f",
+    "@api3/operations": "git+https://github.com/api3dao/operations.git#87c0ab5d9fd641f4ce44d55ec20ccaecb36c2653",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
