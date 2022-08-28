@@ -1,5 +1,6 @@
 {
   "chainNames": {
+    "1": "mainnet",
     "5": "goerli",
     "10": "optimism",
     "30": "rsk",
@@ -26,6 +27,7 @@
     "421611": "arbitrum-testnet"
   },
   "SelfServeDapiServerWhitelister": {
+    "1": "0x5bD69cEe3bf372d331CDCbAb0C1e2202645e4dB4",
     "5": "0x91fA679fe8d1C845F3cBe93357f6908DC0Ca4392",
     "10": "0xFb10b1b0f68b3EaAcA1eCD12a47Cf7F55BeabB98",
     "30": "0x076C247FD531b66a908e354B59DE498D2E826634",
