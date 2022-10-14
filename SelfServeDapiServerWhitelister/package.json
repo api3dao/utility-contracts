@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@api3/airnode-protocol-v1": "0.5.0",
-    "@api3/operations": "git+https://github.com/api3dao/operations.git#6e62bd44d62846530e6ba9ba6533a35ebcea9672",
+    "@api3/operations": "git+https://github.com/api3dao/operations.git#b8bf35f414c917e27d4c35e966dae4debf776798",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
