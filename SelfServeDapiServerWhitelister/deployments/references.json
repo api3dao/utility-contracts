@@ -6,12 +6,12 @@
     "30": "rsk",
     "31": "rsk-testnet",
     "56": "bsc",
-    "69": "optimism-testnet",
     "77": "gnosis-testnet",
     "97": "bsc-testnet",
     "100": "gnosis",
     "137": "polygon",
     "250": "fantom",
+    "420": "optimism-testnet",
     "588": "metis-testnet",
     "1088": "metis",
     "1284": "moonbeam",
@@ -24,7 +24,8 @@
     "43114": "avalanche",
     "80001": "polygon-testnet",
     "200101": "milkomeda-testnet",
-    "421611": "arbitrum-testnet"
+    "421613": "arbitrum-testnet",
+    "11155111": "sepolia"
   },
   "SelfServeDapiServerWhitelister": {
     "1": "0x5bD69cEe3bf372d331CDCbAb0C1e2202645e4dB4",
@@ -33,12 +34,12 @@
     "30": "0x076C247FD531b66a908e354B59DE498D2E826634",
     "31": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
     "56": "0xD3c5Bbc86B8376f3f783db29BB4558507f686Fa4",
-    "69": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
     "77": "0x88dAA2b3a5EC5609DBEf336818E7bafdfED6c535",
     "97": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
     "100": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
     "137": "0x0117AAD0fC3AD9edd580A3fC74a817945eeAFa2A",
     "250": "0x50f8f227DEbA0028607a37B615A4EbBbF0E5b42E",
+    "420": "0x5aB00E30453EEAd35025A761ED65d51d74574C24",
     "588": "0x8B0A67D060C86919Ae76Ca3FA69c68Ff98E85c3c",
     "1088": "0x8B0A67D060C86919Ae76Ca3FA69c68Ff98E85c3c",
     "1284": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
@@ -51,6 +52,7 @@
     "43114": "0x0117AAD0fC3AD9edd580A3fC74a817945eeAFa2A",
     "80001": "0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3",
     "200101": "0x8F3A2508C45a58d4fBAd5Ce564899659626D41B6",
-    "421611": "0x8F3A2508C45a58d4fBAd5Ce564899659626D41B6"
+    "421613": "0x5aB00E30453EEAd35025A761ED65d51d74574C24",
+    "11155111": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
   }
 }
